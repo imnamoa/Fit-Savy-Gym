@@ -130,11 +130,90 @@
                     <button class="plan-btn" onclick="selectPlan('general-lifetime')">Join Lifetime</button>
                 </div>
             </div>
+<li><i class="fas fa-check"></i> Priority Access</li>
+            
+                <!-- Pricing Section -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">MEMBERSHIP PRICING</h2>
+            <p class="section-subtitle">Choose your perfect plan and start your transformation today</p>
+        </div>
 
-            <!-- Student Pricing Cards -->
-            <div id="student-pricing" class="pricing-grid">
+        <!-- GENERAL MEMBERS PRICING -->
+        <div class="pricing-category">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <i class="fas fa-users"></i> GENERAL MEMBERS
+                </h3>
+                <span class="category-subtitle">Premium plans for everyone</span>
+            </div>
+            <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="card-badge student-badge">STUDENT SPECIAL</div>
+                    <div class="card-badge">50% OFF<br>Registration</div>
+                    <div class="card-header">
+                        <h3>3 Months</h3>
+                        <div class="price">₹3,500</div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Full Gym Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
+                        <li><i class="fas fa-check"></i> Group Classes</li>
+                        <li><i class="fas fa-check"></i> Lockers Access</li>
+                    </ul>
+                    <button class="plan-btn" onclick="selectPlan('general-3months', 'General 3 Months - ₹3,500')">
+                        Join Now
+                    </button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="card-badge popular-badge">MOST POPULAR</div>
+                    <div class="card-header">
+                        <h3>6 Months</h3>
+                        <div class="price">₹7,000</div>
+                        <span class="offer">+ 1 Month FREE<br>Personal Training & Diet Plan</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Full Gym Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
+                        <li><i class="fas fa-check"></i> 1 Month FREE Personal Training</li>
+                        <li><i class="fas fa-check"></i> FREE Diet Plan</li>
+                        <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                    </ul>
+                    <button class="plan-btn" onclick="selectPlan('general-6months', 'General 6 Months - ₹7,000 + FREE Training')">
+                        Join Now
+                    </button>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="card-header">
+                        <h3>1 Year + Lifetime</h3>
+                        <div class="price">₹12,000</div>
+                        <span class="offer">+ 1 Month FREE Training<br>& Lifetime Membership</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 1 Year Full Access</li>
+                        <li><i class="fas fa-check"></i> Lifetime Membership FREE</li>
+                        <li><i class="fas fa-check"></i> 1 Month FREE Personal Training</li>
+                        <li><i class="fas fa-check"></i> FREE Diet Plan</li>
+                        <li><i class="fas fa-check"></i> Priority Access</li>
+                    </ul>
+                    <button class="plan-btn premium-btn" onclick="selectPlan('general-lifetime', 'General Lifetime - ₹12,000')">
+                        Lifetime Access
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- STUDENT PRICING -->
+        <div class="pricing-category student-category">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <i class="fas fa-graduation-cap"></i> STUDENTS SPECIAL
+                </h3>
+                <span class="category-subtitle">Show Student ID | Special Discounts</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-badge student-badge">STUDENT<br>SPECIAL</div>
                     <div class="card-header">
                         <h3>3 Months</h3>
                         <div class="price">₹2,000</div>
@@ -143,8 +222,11 @@
                         <li><i class="fas fa-check"></i> Full Gym Access</li>
                         <li><i class="fas fa-check"></i> All Equipment</li>
                         <li><i class="fas fa-check"></i> Group Classes</li>
+                        <li><i class="fas fa-check"></i> Lockers Access</li>
                     </ul>
-                    <button class="plan-btn" onclick="selectPlan('student-3months')">Join Now</button>
+                    <button class="plan-btn" onclick="selectPlan('student-3months', 'Student 3 Months - ₹2,000')">
+                        Join Now
+                    </button>
                 </div>
                 <div class="pricing-card popular">
                     <div class="card-badge popular-badge">BEST VALUE</div>
@@ -158,8 +240,11 @@
                         <li><i class="fas fa-check"></i> FREE Gym Shirt</li>
                         <li><i class="fas fa-check"></i> All Equipment</li>
                         <li><i class="fas fa-check"></i> Group Classes</li>
+                        <li><i class="fas fa-check"></i> Student Priority</li>
                     </ul>
-                    <button class="plan-btn" onclick="selectPlan('student-6months')">Join Now</button>
+                    <button class="plan-btn" onclick="selectPlan('student-6months', 'Student 6 Months - ₹3,000 + FREE Shirt')">
+                        Join Now
+                    </button>
                 </div>
                 <div class="pricing-card">
                     <div class="card-header">
@@ -170,11 +255,15 @@
                     <ul class="features-list">
                         <li><i class="fas fa-check"></i> Full Year Access</li>
                         <li><i class="fas fa-check"></i> FREE Gym Shirt</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
                         <li><i class="fas fa-check"></i> Priority Access</li>
+                        <li><i class="fas fa-check"></i> Student Benefits</li>
                     </ul>
-                    <button class="plan-btn" onclick="selectPlan('student-1year')">Join Now</button>
+                    <button class="plan-btn" onclick="selectPlan('student-1year', 'Student 1 Year - ₹6,000 (50% OFF)')">
+                        Join Now
+                    </button>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card premium">
                     <div class="card-header">
                         <h3>Lifetime</h3>
                         <div class="price">₹10,000</div>
@@ -184,12 +273,17 @@
                         <li><i class="fas fa-check"></i> LIFETIME Access</li>
                         <li><i class="fas fa-check"></i> FREE Gym Shirt</li>
                         <li><i class="fas fa-check"></i> All Benefits</li>
+                        <li><i class="fas fa-check"></i> Priority Access</li>
+                        <li><i class="fas fa-infinity"></i> Never Expires</li>
                     </ul>
-                    <button class="plan-btn" onclick="selectPlan('student-lifetime')">Lifetime Access</button>
+                    <button class="plan-btn premium-btn" onclick="selectPlan('student-lifetime', 'Student Lifetime - ₹10,000')">
+                        Lifetime Access
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
