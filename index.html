@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FIT SAVY GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>FIT SAVY GYM</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <h1 class="fade">Transform Your Body</h1>
+  <p class="fade">Train Hard. Stay Fit.</p>
+  <button onclick="joinNow()" class="fade">Join Now</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Top trainers, premium equipment, and a powerful environment to push your limits.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Personal Training</div>
+    <div class="card">Weight Training</div>
+    <div class="card">Cardio Programs</div>
+    <div class="card">Diet Plans</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <h2>Membership Plans</h2>
+  <div class="pricing">
+    <div class="plan">
+      <h3>Basic</h3>
+      <p>₹999/month</p>
+      <button onclick="joinNow()">Join</button>
+    </div>
+    <div class="plan premium">
+      <h3>Standard</h3>
+      <p>₹1499/month</p>
+      <button onclick="joinNow()">Join</button>
+    </div>
+    <div class="plan">
+      <h3>Premium</h3>
+      <p>₹1999/month</p>
+      <button onclick="joinNow()">Join</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <img src="images/gym1.jpg">
+  <img src="images/gym2.jpg">
+  <img src="images/gym3.jpg">
+  <img src="images/gym4.jpg">
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form onsubmit="return submitForm()">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="email" placeholder="Email" id="email" required>
+    <textarea placeholder="Message" id="message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p>📍 Circular Rd, opposite IMC Hall, Fellowship Colony, Dimapur, Nagaland 797113/p>
+  <p>📞 +91 97038 32441</p>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/911234567890" class="whatsapp">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
